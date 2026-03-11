@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Nivuu's 21st birthday</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2"></script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- LANDING SECTION -->
+    <section id="landing" class="hero">
+      <h1>🎈 21st ride 🎈</h1>
+      <div id="typed-output"></div>
+      <div class="floating-hearts">
+        <div class="heart">❤️</div>
+        <div class="heart">💖</div>
+        <div class="heart">💕</div>
+        <div class="heart">💗</div>
+      </div>
+      <button class="start-btn" id="enterBtn">✨ open surprise ✨</button>
+      <p style="font-size:1.3rem; margin-top:2rem; background: rgba(255,255,255,0.3); padding:0.5rem 2rem; border-radius: 60px;">👇 scroll down for story + games 👇</p>
+    </section>
+
+    <!-- BIRTHDAY STORY SCROLL (5 cards) -->
+    <section id="story" class="story-section">
+      <div class="story-card" data-reveal>
+        <h2>✨ first message</h2>
+        <p>“Hey, Happy birthday Nivuu ! We built this little world for you.”</p>
+      </div>
+      <div class="story-card" data-reveal>
+        <h2>🌼 How we met</h2>
+        <p>It was that random or i will say sumellika's  group chat that brought us together and even after so many ups and down with them we stayed together and grown together.</p>
+      </div>
+      <div class="story-card" data-reveal>
+        <h2>😂 Funny memories </h2>
+        <p>Us roasting you and you being our cute bhenuu never failed to make us laugh with your antics. And definitely your typos , they are the funniest part of you that we adore. </p>
+      </div>
+      <div class="story-card" data-reveal>
+        <h2>💬 Our gossips </h2>
+        <p>Us gushing about sumellika in our initial days and then bonding over bangtan and food and politicsand girls talk and trauma bonding  and what not , playing games , once in a while video and voice call and watching that wings live on google meet together while we all are internally screaming w/o saying anything bcs we are watching form under covers with our family outside.</p>
+      </div>
+      <div class="story-card" data-reveal>
+        <h2>🎁 Last but not the least</h2>
+        <p>You're 21! 🥳 I'm beyond grateful for you and for you being our life making it more brighter with your shining personality . You taught us many things in your way and We promise you we will always be with you for better and worse . Here's to many more memories. We love you and we cherish you. </p>
+      </div>
+    </section>
+
+    <!-- MINI GAMES SECTION (3 games) -->
+    <section id="games">
+      <h2 style="font-size:3rem; color:#bb0760; text-align:center; margin-bottom:1rem;">🎮 play & celebrate</h2>
+      <div class="games-grid">
+        <!-- game 1: catch the cake -->
+        <div class="game-card glass-card">
+          <h3>🍰 catch the cake</h3>
+          <div class="game-area" id="gameCatch">
+            <div id="cakeContainer"></div>
+            <div class="basket" id="basket">🧺</div>
+            <div><span class="score" id="cakeScore">0</span> cakes</div>
+            <button class="btn-game" id="startCatch">🎯 start catch</button>
+          </div>
+        </div>
+
+        <!-- game 2: pop balloons -->
+        <div class="game-card glass-card">
+          <h3>🎈 pop balloons</h3>
+          <div class="game-area">
+            <div id="balloonField" class="balloon-field"></div>
+            <div><span class="score" id="balloonScore">0</span> pops</div>
+            <button class="btn-game secondary" id="startBalloons">🎈 release</button>
+          </div>
+        </div>
+
+        <!-- game 3: memory cards -->
+        <div class="game-card glass-card">
+          <h3>🃏 memory match</h3>
+          <div class="game-area">
+            <div id="memoryBoard" class="memory-grid"></div>
+            <div>attempts: <span id="attempts">0</span></div>
+            <button class="btn-game" id="resetMemory">🔄 new game</button>
+          </div>
+        </div>
+      </div>
+      <p style="text-align:center; color:#bb0760;">★ complete all? go to final celebration ★</p>
+    </section>
+
+    <!-- FINAL BIRTHDAY CELEBRATION -->
+    <section id="final" class="final-section hidden">
+      <div class="glow-text">🎉 HAPPY 21st BIRTHDAY! 🎉</div>
+      <div class="message-big">“We are really grateful to have you in our life. Even though we're miles apart, our friendship means a lot to us.  SARANGHEYOO BORAHAE ”</div>
+      <button class="music-btn" id="confettiBtn">🎊 burst confetti 🎊</button>
+      <button class="music-btn" id="playMusicBtn" style="background:#bb0760; margin-top:1rem;">🔊 play birthday song</button>
+      <p style="margin-top:2rem;">❤️ 💖 💕</p>
+    </section>
+    
+    <footer>✨ made with love ✨</footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
